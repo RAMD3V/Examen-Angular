@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div >
+    <h1>Déjanos tus comentarios</h1>
+    <div id="formul">
+    <form [formGroup]="formulario" (ngSubmit)="guardarEmp()">
+        <label for="">Ingresa Nombre del Empleado</label>
+        <input type="text" formControlName="nombre">
+        <label for="">Telefono del Empleado</label>
+        <input type="text" formControlName="numero">
+        <label for="">Edad del Empleado</label>
+        <input type="text" formControlName="edad">
+        <label for="">Cargo del empleado</label>
+        <input type="text" formControlName="cargo">
+        <label for="">RFC del empleado</label>
+        <input type="text" formControlName="rfc">
+        <input type="submit" value="Guardar Empleado">
+    </form>
+</div>
+    </div>

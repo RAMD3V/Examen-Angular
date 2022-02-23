@@ -1,0 +1,25 @@
+<app-header></app-header>
+<form action="">
+    <label for="">
+        <input type="text">
+        <input type="submit" value="Eliminar Empleado">
+    </label>
+</form>
+<table>
+    <thead>
+        <th>Nombre</th>
+        <th>Número</th>
+        <th>Edad</th>
+        <th>Cargo</th>
+        <th>RFC</th>
+    </thead>
+    <tbody *ngFor="let emp of servListaEmpleados">
+        <tr>
+            <td>{{emp.nombre}}</td>
+            <td>{{emp.nombre}}</td>
+            <td>{{emp.nombre}}</td>
+            <td>{{emp.nombre}}</td>
+            <td>{{emp.nombre}}</td>
+        </tr>
+    </tbody>
+</table>
